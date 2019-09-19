@@ -15,6 +15,15 @@
 */
 
 func alphabetSoup(_ str: String) -> String {
-    // solution replaced in Swift 5
 }
+
+alphabetSoup("hello")
+
+alphabetSoup("edabit")
+
+alphabetSoup("hacker")
+
+alphabetSoup("geek")
+
+alphabetSoup("javascript")
 
