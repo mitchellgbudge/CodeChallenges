@@ -26,3 +26,5 @@ isBetween("apple", "banana", "azure")
 isBetween("monk", "monument", "monkey")
 
 isBetween("bookend", "boolean", "boost")
+
+isBetween("0", "2", "1")
