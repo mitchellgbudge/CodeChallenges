@@ -12,7 +12,17 @@
  */
 
 func isBetween(_ first: String, _ last: String, _ word: String) -> Bool {
-    if first > word > last {
-        return true
-    } else { return false }
+    var bool = false
+    if first.lexicographicallyPrecedes(word) {
+        if word.lexicographicallyPrecedes(last) {
+            bool = true
+        }
+    } else { bool = false }
+    return bool
 }
+
+isBetween("apple", "banana", "azure")
+
+isBetween("monk", "monument", "monkey")
+
+isBetween("bookend", "boolean", "boost")
