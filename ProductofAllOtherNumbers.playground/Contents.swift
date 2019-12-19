@@ -2,19 +2,13 @@ import UIKit
 
 func getProducts(_ arr: [Int]) -> [Int] {
   var products: [Int] = []
-  var mappedArray: [Int] = []
-   
-  var product: Int = 0 {
-    didSet {
-      products.append(product)
-    }
-  }
    
   arr.map {
     var array = arr
     let arrayIndex = array.firstIndex(of: $0)
     array.remove(at: arrayIndex ?? 0)
-    product = array.reduce(1, *)
+    let product = array.reduce(1, *)
+    products.append(product)
   }
    
   return products
