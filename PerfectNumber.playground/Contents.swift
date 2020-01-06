@@ -58,6 +58,10 @@ checkPerfect(8128)
 
 checkPerfect(33550336)
 
+checkPerfect(4)
+
+checkPerfect(20)
+
 checkPerfect(12)
 
 checkPerfect(97)
