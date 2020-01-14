@@ -2,13 +2,18 @@ import UIKit
 
 func findShortestWords(_ str: String) -> [String] {
     
+    var string = str.lowercased()
+    string.removeAll { $0 == "." }
+    string.removeAll { $0 == "!" }
+    string.removeAll { $0 == "," }
+    
     let split = str.split(separator: " ")
     
     let sort = split.sorted { $0.count < $1.count }
 
     let filter = split.filter { $0.count <= sort.first!.count }
     
-    return filter.map { String($0).lowercased() }.sorted()
+    return filter.map { String($0) }.sorted()
     
     
 }
